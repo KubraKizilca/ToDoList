@@ -1,0 +1,16 @@
+﻿<Window x:Class="ToDoList.TodoList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ToDoList"
+        mc:Ignorable="d"
+        Title="TodoList" Height="450" Width="800"  WindowStartupLocation="CenterScreen">
+    <Grid>
+        <ListBox Name="lbxTasks" HorizontalAlignment="Left" Height="299" Margin="10,10,0,0" VerticalAlignment="Top" Width="373" SelectionChanged="ListBox_SelectionChanged"/>
+        <TextBox Name="txbInput" FontSize="20" HorizontalAlignment="Left" Height="33" Margin="393,10,-0.4,0" TextWrapping="Wrap" Text="Enter a task" VerticalAlignment="Top" Width="401"/>
+        <Button Name="btnAdd" Content="EKLE" IsEnabled="True" Click="btnAdd_Click" HorizontalAlignment="Left" Margin="393,87,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.539,-1.166"/>
+        <Button Name="btnDelete" Content="SİL" IsEnabled="True" Click="btnDelete_Click" HorizontalAlignment="Left"  Margin="521,87,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.539,-1.166"/>
+        <Button Content="AÇ" Click="ac" HorizontalAlignment="Left" Margin="665,87,0,0" VerticalAlignment="Top" Width="95" RenderTransformOrigin="0.601,8.465"/>
+    </Grid>
+</Window>

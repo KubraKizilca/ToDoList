@@ -1,0 +1,34 @@
+﻿<Window x:Class="ToDoList.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+          xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:ToDoList"
+        mc:Ignorable="d"
+        Title="Register" Height="500" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Grid>
+        <StackPanel Margin="50">
+          
+            <Border Background="White" Margin="10 20 " CornerRadius="5">
+                <StackPanel Margin="25">
+                    <Label x:Name="Lbl_Register" Margin="15" Content="REGISTER"/>
+                    <TextBox x:Name="Txt_Name" Margin="15" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Name" AutomationProperties.Name="Name"/>
+                    <TextBox x:Name="Txt_Username" Margin="15" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Username" AutomationProperties.Name="Username"/>
+                    <PasswordBox x:Name="Txt_Password" Margin="15" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" materialDesign:HintAssist.Hint="Password" AutomationProperties.Name="Password"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button x:Name="Btn_Back" Margin="15 10" Content="Back" Click="Btn_Back_Click" AutomationProperties.Name="Btn_Back_Click"/>
+                        <Button x:Name="Btn_Register" Margin="15 10" Content="Register" Click="Btn_Register_Click" AutomationProperties.Name="Btn_Register_Click"/>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF2281D1"/>
+                <GradientStop Color="#FF34268A" Offset="1"/>
+                <GradientStop Color="#FF33288B" Offset="0.5"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+    </Grid>
+</Window>
